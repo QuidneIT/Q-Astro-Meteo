@@ -1,0 +1,23 @@
+﻿ASCOM Environment driver for Q-Astro Meteo
+To be used with Q-Astro Meteo
+Description:	Q-Astro Meteo driver is part of a LocalServer ASCOM Solution 
+		which uses an Arduino NANO 33 IoT or Arduino NANO board to get Meteo data through a WiFi or Serial communication channel
+
+Implements:	ASCOM Q-Astro Meteo interface version : 1.2.0
+Author:		(RvE) Raoul van Eijndhoven Support@quidne-it.com
+
+Verion Log:
+
+Date	    Who	Vers	Description
+----------  ---	-----	-----------------------------------------------------------------
+30-01-2021  RvE	1.0.0	Initial Release.
+13-02-2021  RvE 1.2.0   Added ability to set additional Cloud Modelling data during setup
+						Determine a disconnect when no data was received 3 times in a row
+						Added ability to write collected data to CSV file. 
+						CSV file setting is defined in ASCOM Setup.
+						Update .iss installation file with a few corrections.
+17-02-2021  RvE 1.5.0   Cleaned up the code and recoded the Telnet Interface to make the 
+						connection more stable. 
+20-02-2021  RvE 1.5.1	Bug fix in Arduino code to stop rain sensor heater going to max when invalid value is returned.
+21-02-2021  RvE 1.6.0	Added the ability to define the Lux multiplier during driver setup.
+-----------------------------------------------------------------------------------------
