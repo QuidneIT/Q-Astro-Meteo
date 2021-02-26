@@ -3,7 +3,7 @@ Q-Astro Meteo Project Arduino &amp; ASCOM
 
 Please see here for details: http://www.q-astro.com/?#/ascom-weather-station/
 
-#Uploading the Arduino code
+# Uploading the Arduino code
 If you use serial you do not need to update any Arduino file (Arduino Nano).
 But if you are planning to use an Arduino Nano 33 IoT and use it over wifi you will need to update Network.h and fill in the specifics for you wifi environment
 
