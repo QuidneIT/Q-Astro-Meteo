@@ -9,8 +9,9 @@ But if you are planning to use an Arduino Nano 33 IoT and use it over wifi you w
 
 After you connect via serial or telnet, you can issue to following command.
 
-i# <enter> - returns Q-Astro Meteo ver. x.y.z
-  mm# <enter> - returns a string with all the relevant data the unit collects, separated by _
+i# <enter> - returns Q-Astro Meteo ver. x.y.z.
+
+mm# <enter> - returns a string with all the relevant data the unit collects, separated by _
 
 The data returned:
 o = observatory temp.
