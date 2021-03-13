@@ -314,7 +314,6 @@ void initRainSensor()
 
 void updateMeteoData()
 {
-    Serial.println("Start Updating Meteo Data..");
     updateBMEData();
     updateRainSensor();
     updateHeaterPower();
@@ -322,8 +321,6 @@ void updateMeteoData()
     readmlx90614sensor();
     getskystate();
     getlux();
-    Serial.println("Finished Updating Meteo Data..");
-
 }
 
 void updateMeteoDataTimer()

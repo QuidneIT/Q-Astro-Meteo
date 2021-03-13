@@ -12,7 +12,7 @@
  * 
  */ 
 
-#define DEVICE_RESPONSE "Q-Astro Meteo ver 1.6.0"
+#define DEVICE_RESPONSE "Q-Astro Meteo ver 1.6.1"
  
 #include <Arduino.h>
 #include <math.h>
@@ -33,8 +33,7 @@
 #define SOURCESERIAL 0
 #define SOURCENETWORK 1
 
-#define DEBUG 1
-
+#define DEBUG 0
 
 String ASCOMcmd = "";
 bool ASCOMcmdComplete = false;
@@ -95,7 +94,6 @@ void loop()
     ASCOMcmdComplete = false;
     ASCOMcmd = "";
   }
-
   updateMeteoDataTimer();
 }
 
@@ -121,7 +119,6 @@ void SendResponse(String sendCmd)
 // if we got here, ASCOMcmd[0] = 'c', check the next 
 // character to make sure the command is valid
 #if defined(ARDUINO_SAMD_NANO_33_IOT)
-
 void checkCloseConnection()
 {
   if (ASCOMcmd[1] == 'l')
